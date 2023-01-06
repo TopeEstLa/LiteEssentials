@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+}
+
+group 'me.topeestla'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+
+    maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    maven { url = 'https://mvnrepository.com/artifact/com.zaxxer/HikariCP' }
+    maven { url = 'https://papermc.io/repo/repository/maven-public/' }
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    compileOnly group: 'org.spigotmc', name: 'spigot-api', version: '1.17.1-R0.1-SNAPSHOT'
+    compileOnly group: 'io.papermc.paper', name: 'paper-api', version: '1.17.1-R0.1-SNAPSHOT'
+
+    compileOnly group: 'com.zaxxer', name: 'HikariCP', version: '5.0.1'
+
+    compileOnly group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.13.3'
+    compileOnly group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.3'
+    compileOnly group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.13.3'
+
+    compileOnly group: 'net.kyori', name: 'adventure-api', version: '4.11.0'
+    compileOnly group: 'net.kyori', name: 'adventure-platform-bukkit', version: '4.1.1'
+    compileOnly group: 'net.kyori', name: 'adventure-text-minimessage', version: '4.11.0'
+
+    compileOnly "com.github.MilkBowl:VaultAPI:1.7"
+}
+
+processResources {
+    eachFile { details ->
+        if (details.name.contentEquals('plugin.yml') || details.name.contentEquals('bungee.yml')) {
+            filter { String line ->
+                line.replace('${project.version}', version)
+            }
+        }
+    }
+}

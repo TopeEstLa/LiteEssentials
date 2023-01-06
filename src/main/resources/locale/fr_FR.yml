@@ -1,0 +1,32 @@
+PLAYER-NOT-FOUND: "Joueur introuvable."
+NO-PERMISSION: "Vous n'avez pas la permission d'utiliser cette commande."
+NEED-NUMBER: "Vous devez entrer un nombre."
+COOLDOWN: "Vous ne pouvez pas executer cette commande pendant %time%"
+LOGIN_STATE:
+  ONLINE: "En ligne"
+  OFFLINE: "Hors ligne"
+SEEN:
+  - "Le joueur %player% est %state% depuis %time%."
+  - "UUID : %uuid%."
+  - "IP : %ip%."
+FLY:
+  ENABLE: "Mode fly activer pour %player%"
+  DISABLE: "Mode fly désactiver pour %player%"
+ECONOMY:
+  CURRENCY: "€"
+  GIVE-ALL: "Vous avez donné %amount% %currency% a tout les joueur."
+  BALANCE: "Le solde du joueur %player% est de %balance% %currency%."
+  BALANCE_NOT_ENOUGH: "Vous n'avez pas assez d'argent pour cette transaction."
+  PAY_SUCCESS: "Vous avez payé %amount% %currency% à %to%."
+  RECEIVE_SUCCESS: "Vous avez reçu %amount% %currency% de %from%."
+  BALANCE_UPDATE: "Le solde du joueur %player% a été mis à jour a %balance% %currency%."
+HOME:
+  LIMIT_REACHED: "Vous avez atteint le nombre maximum de home."
+  START_TELEPORT: "Vous allez être téléporté vers votre home."
+  HOME_SET: "Home définie pour avec pour nom %name%."
+  HOME_DELETE: "Home %name% supprimée."
+  HOME_TELEPORTED: "Vous avez téléporté à votre home %name%."
+  HOME_NOT_FOUND: "Home introuvable."
+  LIST_HOMES: "Vous avez %amount% home."
+  LIST_HOMES_FORMAT: "- %name%"
+  TP_COOLDOWN: "Vous serrez dans %time%"

@@ -1,0 +1,11 @@
+debug: false
+locale: fr_FR
+
+storage:
+  type: JSON #MARIADB, JSON, H2, POSTGRESQL, MONGODB
+cache:
+  type: MEMORY #MEMORY, REDIS
+
+home:
+  multiple:
+    default: 1
