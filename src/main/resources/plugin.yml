@@ -2,6 +2,7 @@ name: LiteEssentials
 version: ${project.version}
 description: LiteEssentials is a plugin for Minecraft that provides a few useful features.
 main: me.topeestla.essentials.LiteEssentials
+autoUpdate: true
 authors:
   - TopeEstLa
 website: https://squid-developper.fr
