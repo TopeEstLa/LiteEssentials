@@ -44,6 +44,8 @@ public class LiteEssentials extends JavaPlugin {
 
         this.audiences = BukkitAudiences.create(this);
 
+        this.getLogger().info("ENORME PUTE");
+
         this.localeManager = new LocaleManager(this);
         this.settingsManager = new SettingsManager(this);
         this.settingsManager.loadSettings();
